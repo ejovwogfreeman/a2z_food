@@ -2,5 +2,5 @@
 
 session_start();
 if (isset($_SESSION['user']) === false) {
-    header('Location: /php_ecommerce/login.php');
+    header('Location: /a2z_food/login.php');
 }

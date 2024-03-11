@@ -16,7 +16,7 @@
 
 // function generateReferralLink($username)
 // {
-//     $baseURL = 'http://localhost/php_ecommerce';
+//     $baseURL = 'http://localhost/a2z_food';
 
 //     // You can customize the referral link structure based on your preference
 //     $referralLink = $baseURL . '/register.php?ref=' . urlencode($username);
@@ -128,7 +128,7 @@ $firstName = $lastName = $email = $password = $confirmPassword = $Err = '';
 
 function generateReferralLink($username)
 {
-    $baseURL = 'http://localhost/php_ecommerce';
+    $baseURL = 'http://localhost/a2z_food';
     $referralLink = $baseURL . '/register.php?ref=' . urlencode($username);
     return $referralLink;
 }

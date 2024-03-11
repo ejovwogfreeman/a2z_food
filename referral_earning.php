@@ -50,7 +50,7 @@ $isPaid = $referral['status'] === 'paid';
         <a href="referral_earnings.php" style="font-size: 30px;"><i class="bi bi-arrow-left-circle-fill"></i></a>
         <div>
             <?php if (isset($_SESSION['user']) && $_SESSION['user'][0]['is_admin'] === 'true') : ?>
-                <a href=<?php echo "/php_ecommerce/admin/change_earning_status.php?id={$referral['referral_earning_id']}" ?> class="btn <?php echo $buttonColor; ?> <?php echo $isPaid ? 'disabled-link' : ''; ?>"><?php echo $buttonText; ?></a>
+                <a href=<?php echo "/a2z_food/admin/change_earning_status.php?id={$referral['referral_earning_id']}" ?> class="btn <?php echo $buttonColor; ?> <?php echo $isPaid ? 'disabled-link' : ''; ?>"><?php echo $buttonText; ?></a>
             <?php endif ?>
         </div>
     </div>

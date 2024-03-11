@@ -90,8 +90,8 @@ ob_end_flush();
             <P class="my-3" style="text-align: justify;"><?php echo ucfirst($blog['blog_content']) ?></P>
             <?php if (isset($_SESSION['user']) && $_SESSION['user'][0]['is_admin'] === 'true') : ?>
                 <div class="mt-3">
-                    <a href=<?php echo "/php_ecommerce/admin/update_blog.php?id={$blog['blog_id']}" ?> class="btn btn-outline-primary me-1">UPDATE</a>
-                    <a href=<?php echo "/php_ecommerce/admin/delete_blog.php?id={$blog['blog_id']}" ?> class="btn btn-outline-danger">DELETE</a>
+                    <a href=<?php echo "/a2z_food/admin/update_blog.php?id={$blog['blog_id']}" ?> class="btn btn-outline-primary me-1">UPDATE</a>
+                    <a href=<?php echo "/a2z_food/admin/delete_blog.php?id={$blog['blog_id']}" ?> class="btn btn-outline-danger">DELETE</a>
                 </div>
             <?php endif ?>
         </div>

@@ -82,9 +82,9 @@ $isCancelled = $order['status'] === 'Cancelled';
         <a href="orders.php" style="font-size: 30px;"><i class="bi bi-arrow-left-circle-fill"></i></a>
         <div>
             <?php if (isset($_SESSION['user']) && $_SESSION['user'][0]['is_admin'] === 'true') : ?>
-                <a href=<?php echo "/php_ecommerce/admin/change_order_status.php?id={$order['order_id']}" ?> class="btn <?php echo $buttonColor; ?> <?php echo $isConfirmed ? 'disabled-link' : ''; ?>"><?php echo $buttonText; ?></a>
+                <a href=<?php echo "/a2z_food/admin/change_order_status.php?id={$order['order_id']}" ?> class="btn <?php echo $buttonColor; ?> <?php echo $isConfirmed ? 'disabled-link' : ''; ?>"><?php echo $buttonText; ?></a>
             <?php endif ?>
-            <a href=<?php echo "/php_ecommerce/cancel_order.php?id={$order['order_id']}" ?> class="btn <?php echo $cancelButtonColor; ?> <?php echo $isCancelled ? 'disabled-link' : ''; ?>"><?php echo $cancelButtonText; ?></a>
+            <a href=<?php echo "/a2z_food/cancel_order.php?id={$order['order_id']}" ?> class="btn <?php echo $cancelButtonColor; ?> <?php echo $isCancelled ? 'disabled-link' : ''; ?>"><?php echo $cancelButtonText; ?></a>
         </div>
     </div>
 

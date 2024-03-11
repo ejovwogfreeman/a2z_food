@@ -62,7 +62,7 @@ if (isset($_SESSION['user'])) {
                                 <th scope="row"><?php echo $counter++ ?></th>
                                 <td><?php echo $blog['blog_title']; ?></td>
                                 <td><?php echo date('M d, Y', strtotime($blog['created_at'])); ?></td>
-                                <td><small><a href="/php_ecommerce/blog.php?id=<?php echo $blog['blog_id']; ?>" class="btn btn-outline-info">View Blog</a></small></td>
+                                <td><small><a href="/a2z_food/blog.php?id=<?php echo $blog['blog_id']; ?>" class="btn btn-outline-info">View Blog</a></small></td>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>

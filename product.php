@@ -51,8 +51,8 @@ $product = mysqli_fetch_all($sql_query, MYSQLI_ASSOC)[0];
             </div>
             <?php if (isset($_SESSION['user']) && $_SESSION['user'][0]['is_admin'] === 'true') : ?>
                 <div class="mt-3">
-                    <a href=<?php echo "/php_ecommerce/admin/update_product.php?id={$product['product_id']}" ?> class="btn btn-outline-primary me-1">UPDATE</a>
-                    <a href=<?php echo "/php_ecommerce/admin/delete_product.php?id={$product['product_id']}" ?> class="btn btn-outline-danger">DELETE</a>
+                    <a href=<?php echo "/a2z_food/admin/update_product.php?id={$product['product_id']}" ?> class="btn btn-outline-primary me-1">UPDATE</a>
+                    <a href=<?php echo "/a2z_food/admin/delete_product.php?id={$product['product_id']}" ?> class="btn btn-outline-danger">DELETE</a>
                 </div>
             <?php endif ?>
         </div>

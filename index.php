@@ -335,7 +335,7 @@ if (isset($_GET['message'])) {
         <p>minus sunt, quasi ratione fuga dicta blanditiis, totam tempore rerum repudiandae obcaecati assumenda neque non. Id tenetur amet minima voluptatibus perferendis officia ratione fugiat exercitationem explicabo suscipit ea ipsa animi veritatis cumque eos ad reiciendis eveniet, eaque illo omnis eius dignissimos quo quaerat! Nam, fuga minus.</p>
     </div>
 </div>
-<div class="bg-secondary">
+<div style="background-color: #FEA726;">
     <div class="container text-center d-block d-sm-flex align-items-center justify-content-between py-5">
         <h1 class="d-sm-block d-none text-light">We are close to you</h1>
         <A class="btn btn-primary">GET STARTED</A>

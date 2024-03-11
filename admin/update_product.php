@@ -8,7 +8,7 @@ include('../partials/header.php');
 
 function redirectWithMessage($message)
 {
-    header('Location: /php_ecommerce/index.php?message=' . urlencode($message));
+    header('Location: /a2z_food/index.php?message=' . urlencode($message));
     exit();
 }
 

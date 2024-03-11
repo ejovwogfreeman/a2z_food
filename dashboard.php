@@ -41,7 +41,7 @@ if (isset($_SESSION['user'])) {
         <!-- Dashboard Boxes -->
         <div class="row mt-4">
             <?php if (isset($_SESSION['user']) && $_SESSION['user'][0]['is_admin'] === 'true') : ?>
-                <a href='/php_ecommerce/admin/users.php' class="col-lg-3">
+                <a href='/a2z_food/admin/users.php' class="col-lg-3">
                     <div class="card text-white bg-primary mb-3">
                         <div class="card-body">
                             <h5 class="card-title">ALL USERS</h5>
@@ -50,7 +50,7 @@ if (isset($_SESSION['user'])) {
                     </div>
                 </a>
 
-                <a href='/php_ecommerce/admin/index.php' class="col-lg-3">
+                <a href='/a2z_food/admin/index.php' class="col-lg-3">
                     <div class="card text-white bg-success mb-3">
                         <div class="card-body">
                             <h5 class="card-title">ALL ORDERS</h5>
@@ -59,7 +59,7 @@ if (isset($_SESSION['user'])) {
                     </div>
                 </a>
 
-                <a href='/php_ecommerce/admin/products.php' class="col-lg-3">
+                <a href='/a2z_food/admin/products.php' class="col-lg-3">
                     <div class="card text-dark bg-warning mb-3">
                         <div class="card-body">
                             <h5 class="card-title">ALL PRODUCTS</h5>
@@ -68,7 +68,7 @@ if (isset($_SESSION['user'])) {
                     </div>
                 </a>
 
-                <a href='/php_ecommerce/admin/blogs.php' class="col-lg-3">
+                <a href='/a2z_food/admin/blogs.php' class="col-lg-3">
                     <div class="card text-white bg-danger mb-3">
                         <div class="card-body">
                             <h5 class="card-title">ALL BLOGS</h5>
@@ -77,7 +77,7 @@ if (isset($_SESSION['user'])) {
                     </div>
                 </a>
             <?php endif ?>
-            <a href='/php_ecommerce/referrals.php' class="col-lg-3">
+            <a href='/a2z_food/referrals.php' class="col-lg-3">
                 <div class="card text-white bg-info mb-3">
                     <div class="card-body">
                         <h5 class="card-title">REFERRALS</h5>
@@ -86,7 +86,7 @@ if (isset($_SESSION['user'])) {
                 </div>
             </a>
 
-            <a href='/php_ecommerce/orders.php' class="col-lg-3">
+            <a href='/a2z_food/orders.php' class="col-lg-3">
                 <div class="card text-white bg-secondary mb-3">
                     <div class="card-body">
                         <h5 class="card-title">ORDERS</h5>
@@ -95,7 +95,7 @@ if (isset($_SESSION['user'])) {
                 </div>
             </a>
 
-            <a href='/php_ecommerce/completed_orders.php' class="col-lg-3">
+            <a href='/a2z_food/completed_orders.php' class="col-lg-3">
                 <div class="card text-dark bg-muted mb-3">
                     <div class="card-body">
                         <h5 class="card-title">COMPLETED</h5>
@@ -104,7 +104,7 @@ if (isset($_SESSION['user'])) {
                 </div>
             </a>
 
-            <a href='/php_ecommerce/referral_earnings.php' class="col-lg-3">
+            <a href='/a2z_food/referral_earnings.php' class="col-lg-3">
                 <div class="card text-white bg-dark mb-3">
                     <div class="card-body">
                         <h5 class="card-title">EARNINGS</h5>

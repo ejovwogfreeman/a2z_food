@@ -11,7 +11,7 @@ function redirectWithMessage($message)
     $isAdmin = isset($_SESSION['user']) && $_SESSION['user'][0]['is_admin'] === 'true';
 
     // Set the redirect page based on admin status
-    $redirectPage = $isAdmin ? '/php_ecommerce/admin/index.php' : '/php_ecommerce/orders.php';
+    $redirectPage = $isAdmin ? '/a2z_food/admin/index.php' : '/a2z_food/orders.php';
 
     // Redirect to the determined page with the message
     header('Location: ' . $redirectPage . '?message=' . urlencode($message));

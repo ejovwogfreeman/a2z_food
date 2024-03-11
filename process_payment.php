@@ -55,7 +55,7 @@ $request = array(
     'amount' => $amount,
     'currency' => 'NGN',
     'payment_options' => 'card',
-    'redirect_url' => 'http://localhost/php_ecommerce/payment_status.php?phoneNum=' . urlencode($phoneNum) . '&shippingAddress=' . urlencode($shippingAddress),
+    'redirect_url' => 'http://localhost/a2z_food/payment_status.php?phoneNum=' . urlencode($phoneNum) . '&shippingAddress=' . urlencode($shippingAddress),
     'customer' => array(
         'email' => $email,
         'name' => $first_name . ' ' . $last_name,

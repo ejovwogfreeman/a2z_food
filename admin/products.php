@@ -66,7 +66,7 @@ if (isset($_SESSION['user'])) {
                                 <td><?php echo $product['product_category']; ?></td>
                                 <td><?php echo $product['product_price']; ?></td>
                                 <td><?php echo date('M d, Y', strtotime($product['created_at'])); ?></td>
-                                <td><small><a href="/php_ecommerce/product.php?id=<?php echo $product['product_id']; ?>" class="btn btn-outline-info">View Product</a></small></td>
+                                <td><small><a href="/a2z_food/product.php?id=<?php echo $product['product_id']; ?>" class="btn btn-outline-info">View Product</a></small></td>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>

@@ -6,7 +6,7 @@ include('../config/db.php');
 
 function redirectWithMessage($message)
 {
-    header('Location: /php_ecommerce/admin/index.php?message=' . urlencode($message));
+    header('Location: /a2z_food/admin/index.php?message=' . urlencode($message));
     exit();
 }
 

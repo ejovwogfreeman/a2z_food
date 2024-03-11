@@ -87,7 +87,7 @@ if (isset($_SESSION['user'])) {
                                     </td>
                                     <td>
                                         <small class="bg-primary text-light p-1 rounded">
-                                            <a href=<?php echo "/php_ecommerce/referral_earning.php?id={$referral['referral_earning_id']}" ?> class="text-decoration-none text-light">View Details</a>
+                                            <a href=<?php echo "/a2z_food/referral_earning.php?id={$referral['referral_earning_id']}" ?> class="text-decoration-none text-light">View Details</a>
                                         </small>
                                     </td>
                                 </tr>

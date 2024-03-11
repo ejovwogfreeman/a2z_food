@@ -21,14 +21,14 @@ if (isset($_SESSION['user'])) {
                     $user = mysqli_fetch_assoc($result);
                 } else {
                     $errorMessage = urlencode("User with this id does not exist");
-                    header('Location: /php_ecommerce/admin/users.php?message=' . $errorMessage);
+                    header('Location: /a2z_food/admin/users.php?message=' . $errorMessage);
                     exit();
                 }
             } else {
                 // Handle the case where the query was not executed successfully
                 // You might want to log the error or display a generic error message
                 $errorMessage = urlencode("Error fetching user details");
-                header('Location: /php_ecommerce/admin/users.php?message=' . $errorMessage);
+                header('Location: /a2z_food/admin/users.php?message=' . $errorMessage);
                 exit();
             }
         }

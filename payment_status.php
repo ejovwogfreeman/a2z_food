@@ -78,7 +78,7 @@ if (isset($_GET['status']) && $_GET['status'] === 'completed') {
     // // Clear the cart after placing the order
     // unset($_SESSION['cart']);
     // // Redirect to the success page
-    // header('Location: http://localhost/php_ecommerce/payment_successful.php');
+    // header('Location: http://localhost/a2z_food/payment_successful.php');
     $cartQuery = "SELECT * FROM carts WHERE user_id = '$userId' AND status = 'open'";
     $cartResult = mysqli_query($conn, $cartQuery);
 
@@ -89,7 +89,7 @@ if (isset($_GET['status']) && $_GET['status'] === 'completed') {
         // Update cart status to 'closed' in a single line
         if (mysqli_query($conn, "UPDATE carts SET status = 'closed' WHERE cart_id = '$cartId'")) {
             // Redirect to the success page
-            header('Location: http://localhost/php_ecommerce/payment_successful.php');
+            header('Location: http://localhost/a2z_food/payment_successful.php');
         } else {
             echo "Error updating cart status.";
         }
@@ -98,5 +98,5 @@ if (isset($_GET['status']) && $_GET['status'] === 'completed') {
     }
 } else {
     // Redirect to the checkout page if payment was not completed
-    header('Location: http://localhost/php_ecommerce/checkout.php');
+    header('Location: http://localhost/a2z_food/checkout.php');
 }

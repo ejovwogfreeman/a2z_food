@@ -100,7 +100,11 @@ if (isset($_SESSION['user'])) {
         }
 
         nav {
+            background-image: url('images/background.png');
             background-color: white;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         nav a {
@@ -273,8 +277,8 @@ if (isset($_SESSION['user'])) {
     <nav class="navbar navbar-expand-lg py-3 fixed-top shadow">
         <div class="container">
             <!-- navbar brand / title -->
-            <a href='/php_ecommerce/' class='text-decoration-none'>
-                <h2 class='m-0 p-0'>Tech360</h2>
+            <a href='/a2z_food/' class='text-decoration-none'>
+                <h2 class='m-0 p-0'><img src="images/logo.png" alt="" width="50px"></h2>
             </a>
             <!-- toggle button for mobile nav -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -284,16 +288,16 @@ if (isset($_SESSION['user'])) {
             <!-- navbar links -->
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a href="/php_ecommerce/" class="nav-link text-decoration-none mt-1 me-3">Home</a></li>
-                    <li class="nav-item"><a href="/php_ecommerce/#categories" class="nav-link text-decoration-none mt-1 me-3">Categories</a></li>
-                    <li class="nav-item"><a href="/php_ecommerce/blogs.php" class="nav-link text-decoration-none mt-1 me-3">Blog</a></li>
+                    <li class="nav-item"><a href="/a2z_food/" class="nav-link text-decoration-none mt-1 me-3">Home</a></li>
+                    <li class="nav-item"><a href="/a2z_food/#categories" class="nav-link text-decoration-none mt-1 me-3">Categories</a></li>
+                    <li class="nav-item"><a href="/a2z_food/blogs.php" class="nav-link text-decoration-none mt-1 me-3">Blog</a></li>
                     <?php if (isset($_SESSION['user'])) : ?>
-                        <li class="nav-item"><a href="/php_ecommerce/dashboard.php" class="nav-link text-decoration-none mt-1 me-3">Dashboard</a></li>
-                        <li class="nav-item"><a href="/php_ecommerce/logout.php" class="nav-link text-decoration-none mt-1 me-3">Logout</a></li>
-                        <li class="nav-item"><a href='/php_ecommerce/cart.php' class="text-decoration-none" style="position: relative"><i style="font-size: 30px;" class="bi bi-cart"></i><span style="position: absolute; top: -15px; right: -10px; background: red; color: white; display: flex; align-items: center; justify-content: center;  width: 25px; height: 25px; border-radius: 50%"><?php echo isset($uniqueProductIds) ? count($uniqueProductIds) : 0 ?></span></a></li>
+                        <li class="nav-item"><a href="/a2z_food/dashboard.php" class="nav-link text-decoration-none mt-1 me-3">Dashboard</a></li>
+                        <li class="nav-item"><a href="/a2z_food/logout.php" class="nav-link text-decoration-none mt-1 me-3">Logout</a></li>
+                        <li class="nav-item"><a href='/a2z_food/cart.php' class="text-decoration-none" style="position: relative"><i style="font-size: 30px;" class="bi bi-cart"></i><span style="position: absolute; top: -15px; right: -10px; background: red; color: white; display: flex; align-items: center; justify-content: center;  width: 25px; height: 25px; border-radius: 50%"><?php echo isset($uniqueProductIds) ? count($uniqueProductIds) : 0 ?></span></a></li>
                     <?php else : ?>
-                        <li class="nav-item"><a href="/php_ecommerce/register.php" class="nav-link text-decoration-none mt-1 me-3">Register</a></li>
-                        <li class="nav-item"><a href="/php_ecommerce/login.php" class="nav-link text-decoration-none mt-1 me-0 btn btn-primary px-3">Login</a></li>
+                        <li class="nav-item"><a href="/a2z_food/register.php" class="nav-link text-decoration-none mt-1 me-3">Register</a></li>
+                        <li class="nav-item"><a href="/a2z_food/login.php" class="nav-link text-decoration-none mt-1 me-0 btn btn-primary px-3">Login</a></li>
                     <?php endif ?>
                 </ul>
             </div>

@@ -95,11 +95,11 @@ $marginTopClass = $isIndexPage && !$isAdminPage ? 'mt-0' : 'mt-4';
     <div class="container pt-5 pb-3 inner-footer">
         <ul class="text-start">
             <h5 class="mb-2">Categories</h5>
-            <li><a class="text-light" href="/php_ecommerce/categories.php?category=electronics">Electronics</a></li>
-            <li><a class="text-light" href="/php_ecommerce/categories.php?category=laptops">Laptops</a></li>
-            <li><a class="text-light" href="/php_ecommerce/categories.php?category=accessories">Accessories</a></li>
-            <li><a class="text-light" href="/php_ecommerce/categories.php?category=phones">Phones</a></li>
-            <li><a class="text-light" href="/php_ecommerce/exclusive_deals.php">Exclusive Deals</a></li>
+            <li><a class="text-light" href="/a2z_food/categories.php?category=electronics">Electronics</a></li>
+            <li><a class="text-light" href="/a2z_food/categories.php?category=laptops">Laptops</a></li>
+            <li><a class="text-light" href="/a2z_food/categories.php?category=accessories">Accessories</a></li>
+            <li><a class="text-light" href="/a2z_food/categories.php?category=phones">Phones</a></li>
+            <li><a class="text-light" href="/a2z_food/exclusive_deals.php">Exclusive Deals</a></li>
         </ul>
         <ul class="text-start">
             <h5 class="mb-2">Customer Service</h5>

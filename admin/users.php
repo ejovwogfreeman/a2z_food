@@ -83,7 +83,7 @@ if (isset($_SESSION['user'])) {
                                     <td><?php echo date('M d, Y', strtotime($user['date_joined'])); ?></td>
                                     <td>
                                         <small>
-                                            <a href="/php_ecommerce/profile.php?id=<?php echo $user['user_id']; ?>" class="btn btn-outline-info">View Profile</a>
+                                            <a href="/a2z_food/profile.php?id=<?php echo $user['user_id']; ?>" class="btn btn-outline-info">View Profile</a>
                                         </small>
                                     </td>
                                 </tr>
